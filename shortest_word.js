@@ -13,6 +13,7 @@ module.exports = function(sentence){
 
       if(punctuationMarks.indexOf(characters[j])>=0){
         characters.splice(j,1);
+        j--;
 
       }
       if((shortestWord=== "") || (shortestWord.length > characters.length)){

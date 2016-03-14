@@ -13,6 +13,7 @@ for(i=0;i<words.length;i++){
 
     if(punctuationMarks.indexOf(characters[j])>=0){
       characters.splice(j,1);
+      j--;
 
     }
 if(longestWord.length < characters.length){

@@ -13,6 +13,7 @@ for(m=0;m<words.length;m++){
 
     if(punctuationMarks.indexOf(characters[n])>=0){
       characters.splice(n,1);
+      n--;
 
     }
     words[m]=characters.join('');
