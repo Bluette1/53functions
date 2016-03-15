@@ -3,9 +3,9 @@ var assert = require('assert');
 
 describe("square_stars", function(){
 
-    it("should draw a 4x4 rectangle using stars", function(){
-        var result = square_stars(['* * * *', '*     *', '*     *', '* * * *']);
-        assert.equal(result, console.log('* * * *\n*     *\n*     *\n* * * *') );
+    it("should draw a 4x4 square using stars", function(){
+        var result = square_stars(['* * * *','* * * *','* * * *','* * * *']);
+        assert.equal(result,'* * * *\n* * * *\n* * * *\n* * * *\n' );
     });
 
 

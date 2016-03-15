@@ -5,7 +5,7 @@ describe("tri_char", function(){
 
     it("should draw a rectangle of base 4 when called with '*'", function(){
         var result = tri_char('*');
-        assert.equal(result, '   *\n * * *\n* * * *\n');
+        assert.equal(result, '   *\n  * *\n * * *\n* * * *\n');
     });
 
 

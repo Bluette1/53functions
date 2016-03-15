@@ -1,8 +1,9 @@
 module.exports =function(stringArray){
 
-var  string ='';
+var  string ="";
 for(i=0;i<stringArray.length;i++){
-  string +=  stringArray[i] + "\n";
+  string += stringArray[i] + "\n";
 }
-return console.log(string);
+console.log(string);
+return string;
 }
