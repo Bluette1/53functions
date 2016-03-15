@@ -16,7 +16,7 @@ for(i=1;i<=n;i++){
    stringArray.push(str);
 }
 
-for(i=1;i<=n;i++){
+for(i=1;i<n;i++){
   var spacesCount = i;
   var charCount =n-i;
   var str ='';
