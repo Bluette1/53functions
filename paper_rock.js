@@ -8,13 +8,6 @@ var RockPaperScissors = function(n){
 
 
   this.score = function(){
-    if(count1 > count2){
-      this.winner = "Player1";
-    }
-
-    if(count2 < count1){
-      this.winner = "Player2";
-    }
 
     return {"Player1": count1, "Player2": count2, "winner": this.winner};
   };
@@ -43,7 +36,7 @@ var RockPaperScissors = function(n){
    }
 
    if (players[0]===players[1]) {
-     theWinner = "Player1 and Player2";
+     theWinner = "tie";
    }
 
     if(players[0]==='*'){
@@ -51,14 +44,14 @@ var RockPaperScissors = function(n){
        theWinner ="Player1";
         count1++;
       }
-      if(players[1]=='#') {
+      if(players[1]==='#') {
         theWinner ="Player2";
         count2++;
 
       }
     }
     if(players[0]==='x'){
-      if (players[1]=='*'){
+      if (players[1]==='*'){
        theWinner ="Player2";
         count2++;
       }
@@ -70,7 +63,7 @@ var RockPaperScissors = function(n){
     }
 
     if(players[0]==='#'){
-      if (players[1]=='x'){
+      if (players[1]==='x'){
       theWinner ="Player2";
         count2++;
       }
@@ -83,7 +76,7 @@ var RockPaperScissors = function(n){
 
      n--;
 
-     track.push({"result" : players[0]+ ' - '+players[1], "winner" : theWinner, "status" : this.status })
+     track.push({"result" : players[0]+ ' - '+players[1], "winner" : theWinner, "status" : this.status });
     }
    console.log(track);
 
@@ -92,7 +85,7 @@ var RockPaperScissors = function(n){
       this.status = "done";
     }
     if(count1===count2){
-      this.winner= "Player1 and Player2";
+      this.winner= "tie";
     }
     if(count1 > count2){
       this.winner = "Player1";
@@ -113,3 +106,4 @@ var RockPaperScissors = function(n){
 
   var game1 = new RockPaperScissors(3);
   console.log(game1.play());
+  console.log(game1.score());
