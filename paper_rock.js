@@ -19,7 +19,9 @@ var RockPaperScissors = function(n){
       var theWinner ='';
       var players =[];
       for(i = 0; i < 2; i++ ){
-      var choice = Math.round(2*Math.random());
+
+      var choice = Math.floor(Math.random() * (2 - 0 + 1)) + 0;
+
       //choice.push(theChoice);
 
       switch (choice) {

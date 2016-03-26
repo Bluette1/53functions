@@ -1,3 +1,3 @@
-var calc_chain= require('./calc_chain');
-var calc = new calc_chain();
-console.log(calc.add(1,2).multiply(9).value());
+var anyday= require('./anyday');
+
+console.log(anyday(2018,"Saturday"));
